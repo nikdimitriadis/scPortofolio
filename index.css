@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fjalla+One&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+:root {
+  --font-Gothic: "Didact Gothic", sans-serif;
+  --font-Fjalla: "Fjalla One", sans-serif;
+  --font-Work: "Work Sans", sans-serif;
+  --color-first: #fff;
+  --color-ligr: #9e9e9e;
+  --color-drgr: #666;
+  --color-libl: #333;
+  --color-bl: #000;
+  --text-up: uppercase;
+}
+
+/* general p */
+
+p {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* Header section */
+
+header {
+  text-align: center;
+}
+
+header p {
+  font-family: var(--font-Work);
+}
+
+header h1 {
+  font-family: var(--font-Gothic);
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: auto;
+  /* mporw kai 5rem */
+  margin-bottom: 50px;
+  max-width: 500px;
+  text-transform: var(--text-up);
+}
+
+header img {
+  width: 50%;
+}
+
+header h2 {
+  text-transform: var(--text-up);
+  font-family: var(--font-Work);
+  font-weight: 400;
+  font-size: 16rem;
+}
+
+/* Main first photo */
+/* Main first photo */
+
+/* BACKGROUND PHOTO */
+main article:first-child {
+  background-image: url("images/portfolio2.jpg");
+}
+
+main article:nth-child(2) {
+  background-image: url("images/portfolio3.png");
+}
+main article:nth-child(3) {
+  background-image: url("images/portfolio4.jpg");
+}
+main article:nth-child(4) {
+  background-image: url("images/portfolio5.png");
+}
+
+/* article margin */
+main article:last-child {
+  margin-bottom: 10rem;
+}
+
+/* Background photo settings */
+main article {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+main article div {
+  padding: 150px 0 0 0;
+  margin: 0 0 0 220px;
+}
+
+/* p colors */
+
+main article div span,
+p {
+  color: var(--color-ligr);
+  font-family: var(--font-Work);
+}
+
+/* line */
+main article p span {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  border-top: 1px solid var(--color-ligr);
+  transform: translateY(-5px);
+}
+
+/* H2 COLORS && STRUCTURE */
+
+/* STRUCTURE */
+main article h2 {
+  font-family: var(--font-Gothic);
+  text-transform: var(--text-up);
+  font-weight: 400;
+  font-size: 11.2rem;
+  margin: 0;
+}
+/* H2 COLORS */
+main article:nth-of-type(odd) h2 {
+  color: var(--color-first);
+}
+
+/* P 2n*/
+
+main article div p:nth-of-type(2) {
+  margin: 50px 0 70px 0;
+}
+
+/* button  color hover*/
+main article div button {
+  font-family: var(--font-Fjalla);
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: inherit;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: 2px solid var(--color-bl);
+}
+
+main article:nth-of-type(odd) div button {
+  color: var(--color-first);
+  border-color: var(--color-ligr);
+}
+
+main article div button:hover {
+  background-color: var(--color-bl);
+  border-color: var(--color-bl);
+  color: var(--color-first);
+}
+
+main article:nth-of-type(odd) div button:hover {
+  background-color: var(--color-first);
+  border-color: var(--color-first);
+  color: black;
+}
+
+/*  p:last-child */
+main article div p:last-child {
+  font-family: var(--font-Fjalla);
+  font-size: 16.5rem;
+  font-weight: 400;
+  text-align: right;
+  margin: 0 120px 0 0;
+  padding: 0 0 100px 0;
+  color: var(--color-libl);
+}
+
+main article:nth-of-type(odd) div p:last-child {
+  color: var(--color-ligr);
+}
+
+/* button hover effect */
+
+main article div button:hover + p {
+  opacity: 1;
+  color: var(--color-bl);
+}
+
+main article:nth-of-type(odd) div button:hover + p {
+  opacity: 1;
+  color: var(--color-first);
+}
+
+/* FOOTER */
+/* first art */
+footer article {
+  text-align: center;
+}
+
+footer article a {
+  text-decoration: none;
+}
+
+footer article a:hover {
+  text-decoration: underline;
+}
+
+footer article:first-child {
+  background-color: var(--color-bl);
+}
+
+footer article span {
+  font-family: var(--font-Work);
+  color: var(--color-first);
+  font-weight: 400;
+  font-size: 18rem;
+  display: block;
+  padding: 13rem 0 15rem 0;
+}
+
+footer article div {
+  max-width: 600px;
+  margin: 0 10rem 0 auto;
+  line-height: 2;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--color-drgr);
+  font-family: var(--font-Work);
+  text-align: left;
+}
+
+footer article div p:last-child {
+  margin: 0;
+  padding: 0 0 6rem 0;
+}
+
+footer article div p:last-child a {
+  color: white;
+  font-family: var(--font-Work);
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+/* second art */
+footer article + article li {
+  list-style-type: none;
+  font-family: var(--font-Gothic);
+  font-weight: 400;
+  font-size: 15rem;
+  margin: 20rem 0;
+}
+
+footer article + article p {
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+footer article + article span {
+  font-size: 1rem;
+  color: black;
+  animation: heart 1s linear infinite;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+footer article + article a {
+  color: var(--color-bl);
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
